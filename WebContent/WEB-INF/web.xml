@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+
+	<display-name>/testMicro_microWeb</display-name>
+	
+	<!--容器支持Servlet3.0是不必配置该过滤器-->
+<!-- 	<filter>
+		<filter-name>LibResourceFilter</filter-name>
+		<filter-class>com.sgcc.uap.mxframework.proxy.LibResourceFilter</filter-class>
+		<init-param>
+			model的值可选：jar、dir,当值为jar时将从相应jar中读取静态资源，当为dir时启动服务时会将静态资源提取到项目根目录下
+            <param-name>model</param-name>
+            <param-value>jar</param-value>
+        </init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>LibResourceFilter</filter-name>
+		<url-pattern>/mx/*</url-pattern>
+	</filter-mapping> -->
+	<welcome-file-list>
+	    <welcome-file>/newPage_1/index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
